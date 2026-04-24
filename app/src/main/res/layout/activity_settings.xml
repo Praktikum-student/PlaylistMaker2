@@ -3,30 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1A1B22"
+    android:background="@color/dark_background"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="@dimen/padding_default">
 
         <ImageView
             android:id="@+id/iv_back"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_back"
-            android:tint="#FFFFFF" />
+            android:src="@drawable/arrow"
+            android:contentDescription="@string/back"
+            app:tint="@color/text_primary" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
+            android:layout_marginStart="@dimen/margin_large"
             android:text="@string/settings"
-            android:textColor="#FFFFFF"
-            android:textSize="22sp"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_title"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -35,17 +36,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="16dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp">
+        android:padding="@dimen/padding_default"
+        android:paddingStart="@dimen/padding_medium"
+        android:paddingEnd="@dimen/padding_medium">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/dark_theme"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_normal" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:layout_width="wrap_content"

@@ -3,71 +3,67 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1A1B22"
+    android:background="@color/dark_background"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/padding_default">
 
-    <!-- Заголовок -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="@dimen/padding_default"
         android:text="@string/app_name"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_title"
         android:textStyle="bold" />
 
-    <!-- Кнопка Поиск -->
     <Button
         android:id="@+id/btn_search"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="@dimen/padding_default"
+        android:backgroundTint="@color/white"
         android:text="@string/search"
         android:textAllCaps="false"
-        android:textColor="#1A1B22"
-        android:textSize="22sp"
+        android:textColor="@color/button_text"
+        android:textSize="@dimen/text_button"
         app:icon="@drawable/ic_search"
         app:iconGravity="textStart"
-        app:iconPadding="8dp"
-        app:iconTint="#1A1B22"
-        app:cornerRadius="16dp" />
+        app:iconPadding="@dimen/padding_small"
+        app:iconTint="@color/button_text"
+        app:cornerRadius="@dimen/button_corner" />
 
-    <!-- Кнопка Медиатека -->
     <Button
         android:id="@+id/btn_media"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="@dimen/padding_default"
+        android:backgroundTint="@color/white"
         android:text="@string/media"
         android:textAllCaps="false"
-        android:textColor="#1A1B22"
-        android:textSize="22sp"
+        android:textColor="@color/button_text"
+        android:textSize="@dimen/text_button"
         app:icon="@drawable/ic_media"
         app:iconGravity="textStart"
-        app:iconPadding="8dp"
-        app:iconTint="#1A1B22"
-        app:cornerRadius="16dp" />
+        app:iconPadding="@dimen/padding_small"
+        app:iconTint="@color/button_text"
+        app:cornerRadius="@dimen/button_corner" />
 
-    <!-- Кнопка Настройки -->
     <Button
         android:id="@+id/btn_settings"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/white"
         android:text="@string/settings"
         android:textAllCaps="false"
-        android:textColor="#1A1B22"
-        android:textSize="22sp"
+        android:textColor="@color/button_text"
+        android:textSize="@dimen/text_button"
         app:icon="@drawable/ic_settings"
         app:iconGravity="textStart"
-        app:iconPadding="8dp"
-        app:iconTint="#1A1B22"
-        app:cornerRadius="16dp" />
+        app:iconPadding="@dimen/padding_small"
+        app:iconTint="@color/button_text"
+        app:cornerRadius="@dimen/button_corner" />
 
 </LinearLayout>

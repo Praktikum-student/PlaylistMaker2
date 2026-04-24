@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark_background">#1A1B22</color>
     <color name="button_text">#1A1B22</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#AEAFB4</color>
+    <color name="switch_thumb">#3772E7</color>
+    <color name="switch_track">#9E9E9E</color>
 </resources>
