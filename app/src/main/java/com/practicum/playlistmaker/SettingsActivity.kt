@@ -11,7 +11,7 @@ class SettingsActivity : AppCompatActivity() {
 
         val backButton = findViewById<ImageView>(R.id.iv_back)
         backButton.setOnClickListener {
-            finish() // возврат на главный экран
+            finish()
         }
     }
 }

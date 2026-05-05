@@ -6,17 +6,31 @@
     android:background="@color/dark_background"
     android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/arrow"
-        android:drawablePadding="@dimen/margin_large"
-        android:padding="@dimen/padding_default"
-        android:text="@string/settings"
-        android:textColor="@color/text_primary"
-        android:textSize="@dimen/text_title"
-        android:textStyle="bold"
-        app:drawableTint="@color/text_primary" />
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_default">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrow"
+            android:contentDescription="@string/back"
+            app:tint="@color/text_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:text="@string/settings"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
