@@ -3,55 +3,134 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_background"
+    android:background="@color/white"
     android:orientation="vertical">
 
+    <!-- Заголовок -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="@dimen/padding_default">
+        android:padding="16dp"
+        android:gravity="center_vertical">
 
         <ImageView
             android:id="@+id/iv_back"
-            android:layout_width="@dimen/icon_size"
-            android:layout_height="@dimen/icon_size"
-            android:layout_gravity="center_vertical"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:src="@drawable/arrow"
             android:contentDescription="@string/back"
-            app:tint="@color/text_primary" />
+            app:tint="@color/button_text" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginStart="28dp"
             android:text="@string/settings"
-            android:textColor="@color/text_primary"
-            android:textSize="@dimen/text_title"
+            android:textColor="@color/button_text"
+            android:textSize="22sp"
             android:textStyle="bold" />
-
     </LinearLayout>
 
+    <!-- Тёмная тема -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="@dimen/padding_default"
-        android:paddingStart="@dimen/padding_medium"
-        android:paddingEnd="@dimen/padding_medium">
+        android:padding="16dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center_vertical">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/dark_theme"
-            android:textColor="@color/text_primary"
-            android:textSize="@dimen/text_normal" />
+            android:textColor="@color/button_text"
+            android:textSize="16sp" />
 
-        <androidx.appcompat.widget.SwitchCompat
+        <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+    </LinearLayout>
 
+    <!-- Поделиться приложением -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/share_app"
+            android:textColor="@color/button_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_share"
+            android:contentDescription="@string/share_app"
+            app:tint="@color/button_text" />
+    </LinearLayout>
+
+    <!-- Написать в поддержку (иконка головы с наушниками) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/support"
+            android:textColor="@color/button_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_headset"
+            android:contentDescription="@string/support"
+            app:tint="@color/button_text" />
+    </LinearLayout>
+
+    <!-- Пользовательское соглашение -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/terms"
+            android:textColor="@color/button_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_arrow_right"
+            android:contentDescription="Переход"
+            app:tint="@color/button_text" />
     </LinearLayout>
 
 </LinearLayout>
